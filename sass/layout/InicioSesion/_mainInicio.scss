@@ -1,0 +1,84 @@
+.main-inicio{
+    background: url(../assets/img/iniciosesion.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    align-items: center; /* Centra verticalmente */
+    font-family: Montserrat;
+    .login-container{
+        width: 300px; /* Ancho del contenedor */
+        padding: 20px;
+        border: 3px solid map-get($colores, colorBorder ); /* Borde sólido */
+        border-radius: 5px;
+        background-color: map-get($colores, colorBasic ); 
+        margin-right: 20px; /* Espacio entre el contenedor y el borde derecho */
+        h2{
+            margin-bottom: 20px;
+            text-align: center;
+            text-decoration: underline;
+        }
+        #loginForm{
+            div{
+                margin-bottom: 15px;
+                label{
+                    display: block;
+                    margin-bottom: 5px;
+                }
+                input{
+                    width: 100%;
+                    padding: 8px;
+                    font-size: 16px;
+                    border-radius: 5px;
+                    border: 1px solid #ccc;
+                }
+            }
+            button[type="submit"]{
+                width: 50%;
+                padding: 5px;
+                font-size: 16px;
+                background-color: map-get($colores, colorBorder );
+                color: #FFFF;
+                border-radius: 30px;
+                cursor: pointer;
+                margin: 20px 0px 20px 70px; 
+            }
+        }    
+        div{
+            text-align: center;
+            margin-bottom: 10px;
+            a{
+                button{
+                    background-color: map-get($colores, colorTerciario );
+                    border-radius: 50px;
+                    background-image: url(../../../assets/img/logoGo.png); /* Cambia 'google_logo.png' por la ruta de tu imagen del logo de Google */
+                    background-size: 20px;
+                    background-repeat: no-repeat;
+                    background-position: 10px center; /* Posición del logo */
+                    padding-left: 40px; /* Ajustar espacio para el logo */
+                    cursor: pointer;
+                }
+            }          
+        }
+        p{
+            font-size: 12px;
+            text-align: center; 
+            
+        }  
+        div{
+            h3{
+                font-size:15px;
+                margin: 5px;
+            }
+            h4{
+                font-size:15px;
+                color:map-get($colores, colorBorder );
+            }       
+        } 
+       
+    } 
+}
+  

@@ -1,0 +1,83 @@
+/*Todos los archivos de utilities*/
+
+@import "./utilities/maps";
+@import "./utilities/mixins";
+@import "./utilities/variables";
+/*Bases*/
+
+@import "./base/reset";
+@import "./base/typografias";
+
+/*Layout*/
+/*Header*/
+/*INDEX*/
+@import "./layout/Index/header";
+/*CATALOGO*/
+@import "./layout/Catalogo/headerCatalogo";
+/*INICIO SESION*/
+@import "./layout/InicioSesion/headerInicio";
+/*CARRITO DE COMPRA*/
+@import "./layout/Carrito/headerCarrito";
+/*CONFIRMAR COMPRA*/
+@import "./layout/Confirmar-Compra/headerCompra";
+
+/*Main*/
+/*INDEX*/
+@import "./layout/Index/main";
+/*CATALOGO*/
+@import "./layout/Catalogo/mainCatalogo";
+/*INICIO SESION*/
+@import "./layout/InicioSesion/mainInicio";
+/*CARRITO DE COMPRA*/
+@import "./layout/Carrito/mainCarrito";
+/*CONFIRMAR COMPRA*/
+@import "./layout/Confirmar-Compra/mainCompra";
+
+/*FOOTER*/
+@import "./layout/footer";
+
+/*Componentes*/
+
+/*MediaQuerys*/
+/*INDEX*/
+@import "./layout/mediaQuerys/index/1350px/media1350";
+@import "./layout/mediaQuerys/index/1200px/media1200";
+@import "./layout/mediaQuerys/index/1024px/media1024";
+@import "./layout/mediaQuerys/index/850px/media850";
+@import "./layout/mediaQuerys/index/680px/media680";
+@import "./layout/mediaQuerys/index/560px/media560";
+@import "./layout/mediaQuerys/index/468px/media468";
+@import "./layout/mediaQuerys/index/360px/media360";
+
+/*CATALOGO*/
+@import "./layout/mediaQuerys/Catalago/1315px/media1315";
+@import "./layout/mediaQuerys/Catalago/1020px/media1020";
+@import "./layout/mediaQuerys/Catalago/720px/media720";
+@import "./layout/mediaQuerys/Catalago/560px/media560";
+@import "./layout/mediaQuerys/Catalago/468px/media468";
+@import "./layout/mediaQuerys/Catalago/360px/media360";
+
+/*INICIO-SESION*/
+
+@import "./layout/mediaQuerys/inicio-sesion/1020px/media1020";
+@import "./layout/mediaQuerys/inicio-sesion/768px/media768";
+@import "./layout/mediaQuerys/inicio-sesion/560px/media560";
+@import "./layout/mediaQuerys/inicio-sesion/468px/media468";
+@import "./layout/mediaQuerys/inicio-sesion/360px/media360";
+
+/*CARRITO*/
+@import "./layout/mediaQuerys/Carrito/1336px/media1336";
+@import "./layout/mediaQuerys/Carrito/1020px/media1020";
+@import "./layout/mediaQuerys/Carrito/720px/media720";
+@import "./layout/mediaQuerys/Carrito/560px/media560";
+@import "./layout/mediaQuerys/Carrito/468px/media468";
+@import "./layout/mediaQuerys/Carrito/360px/media360";
+
+/*Confirmar*/
+@import "./layout/mediaQuerys/confirmar/1336px/media1336";
+@import "./layout/mediaQuerys/confirmar/1020px/media1020";
+@import "./layout/mediaQuerys/confirmar/720px/media720";
+@import "./layout/mediaQuerys/confirmar/560px/media560";
+@import "./layout/mediaQuerys/confirmar/468px/media468";
+@import "./layout/mediaQuerys/confirmar/360px/media360";
+

@@ -1,0 +1,210 @@
+.header-index{
+    @include header-styling;
+    div{
+        a{
+            img{
+                height: 40px;
+                width: auto;
+                border-radius: 70%;
+                margin: 0px 10px;
+            }
+        }
+    }
+    form{
+        margin-top: 7px;
+        input[type="text"] {
+            padding: 8px;
+            border-radius: 10px;
+            width: 120px;
+            height: 15px; 
+            font-size: 10px;
+            background-size: 12px; 
+            background-position: 95% center; /* Posiciona la imagen a la derecha y centrada verticalmente */
+        }  
+    }  
+}
+.nav-links{
+    margin-right: 7px;
+    li{
+        margin-top: 5px;
+        margin-left: 10px; 
+        a{
+            padding: 3px;
+            font-size: 7px;            
+        }
+    }
+}
+
+.main-index{
+    .section-main-1 {
+        min-height: 25vh;
+        padding:30px;
+        div{
+            h2 {
+                font-size: 10px;
+                margin: 10px 10px 0 0;     
+            }
+            h4{
+                font-size: 8px;
+            }
+            div{
+                img{
+                    width: 25px;
+                    margin-right: 10px;
+                    margin-bottom: 5px;
+                    height: auto;
+                }
+                p{
+                    font-size: 6px;
+                    margin-left: -10px;
+                }
+            }
+        }
+    }
+    .section-consejos {
+        padding: 30px;
+        h3 {
+            font-size: 12px;
+        }
+        .consejo {         
+            h4 {
+                font-size: 12px;
+            }
+            p {
+                font-size: 10   px; 
+            }
+            img {
+                max-width: 50%; 
+                height: auto; 
+            }            
+        }
+    }
+    .section-main-2{
+        padding: 10px;
+        h3{
+            @include h-text;
+            font-size: 15px;
+            &::before,
+            &::after {
+                content: ''; 
+                flex-grow: 1;
+                height: 3px;    
+                top: 50%;
+                width: 15%; 
+            }
+        }
+        .card-container{
+            margin: 5px;
+            gap:5px;
+            .card{
+                padding: 10px;
+                height: auto;
+                .rating {
+                    font-size: 8px;
+                    margin-bottom: 5px;
+                }
+                .comment {
+                    font-size: 7px;
+                }
+            }               
+        }  
+    }
+    .section-main-3 {
+        padding: 8px;
+        gap:10px;
+        h2{
+            @include h-text;
+            font-size: 12px;
+            &::before,
+            &::after {
+                content: ''; 
+                flex-grow: 1;
+                height: 3px;
+                top: 50%;
+                width: 20%;
+            }
+        }
+        h5{
+            font-size: 15px;
+        }
+        p{
+            font-size: 10px;
+        }
+    } 
+    .section-main-4{
+        h4{
+            font-size: 6px;
+        }
+        button{
+            padding: 2px;
+            font-size: 6px;  
+        }
+    }
+}
+footer {
+    padding: 5px;
+    .footer-left {
+        max-width: 33%;
+        img {
+            width: 60px;
+            border-radius: 60%;
+            margin: 10px 0 0 10px;
+        }
+        div {
+            p {
+                font-size: 15px;
+            }
+        }
+        p {
+            font-size: 7px;
+            margin-top: 50px;
+        }
+    }
+    .footer-center {
+        gap: 10px; 
+        height: 100%; 
+        margin:10px;
+        .ubicacion,
+        .contacto,
+        .correo {
+            img {
+                width: 18px;
+                height: auto;
+                margin-right: 10px;
+            }
+            .contacto-title , .contacto-details {
+                font-size: 6px;
+            }
+        }
+    }
+    .footer-right {
+        text-align: right;
+        max-width: 40%;
+        .footer-message {
+            padding: 5px;
+            font-size: 8px;
+            margin: 20px 10 20px 0;
+        }
+        .icons {
+            gap: 10px;
+            margin-top: 70px; 
+            margin-right: 5px;
+            a {
+                img {
+                    width: 20px;
+                    &:hover{
+                        filter: grayscale(0%); 
+                    }
+                }
+            }
+        }  
+    }
+}
+
+
+
+
+
+
+
+

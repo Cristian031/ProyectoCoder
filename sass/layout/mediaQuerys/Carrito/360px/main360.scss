@@ -1,0 +1,187 @@
+body{
+    .header-carrito{
+        @include header-styling;
+        div{
+            a{
+                img{
+                    height: auto;
+                    width: 45px;
+                    margin: 0px 10px 0 0px;
+                }
+            }
+        }
+        form{
+            display: flex;
+            margin-top: 5px;
+            input[type="text"] {
+                padding: 7px;
+                width: 120px;
+                height: 15px; 
+                font-size: 10px;
+                background-image: url(../../../../../assets/img/buscar.png);
+                background-size: 10px; 
+                background-repeat: no-repeat; 
+                background-position: 95% center; 
+            }  
+        } 
+    }
+}
+    .nav-links {
+        display: flex; 
+        list-style-type: none;
+        margin-right: 0px;
+        li {
+            justify-content: start;
+            margin-bottom: 1px;
+            a {
+                font-size: 7px;
+                padding: 2px 5px;
+                img {
+                    max-width: 12px; 
+                    height: auto; 
+                    margin-right: 3px;
+                }
+            }
+        }        
+    }
+    .main-carrito{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto; 
+        gap: 10px;
+        .detalle-producto{
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            margin: 5px;
+            margin-right: 5px;
+            border-right: none;
+            border-bottom: 2px solid  map-get($colores , colorBorder );
+            .columna1{
+                margin-left: 2px;
+                text-align: center;
+                h3{
+                    font-size: 15px;
+                    margin:5px
+                }
+                .producto{
+                    margin-top: 5px;
+                    display: flex; 
+                    justify-content: center; 
+                    align-items: center; 
+                    img{
+                        width: 25px;
+                        margin-bottom: 5px;
+                    }
+                    p{
+                        font-size: 12px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .columna2{
+                margin:30px 0 0 0;
+                h3{
+                    font-size: 15px;
+                    margin-top: 5px; 
+                }
+                .cantidad{
+                    margin-top: 10px;
+                    .botones-cantidad{
+                        margin-top: 10px;
+                        button{
+                            width: 20px;
+                            height: auto;
+                            font-size: 12px;
+                            margin-right: 10px;
+                            margin-left: 10px;
+                        }
+                    }
+                    .quitar{
+                        text-align: center;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .columna3{
+                margin:30px 0 30px 0;
+                h3{
+                    font-size: 15px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+        .aside-total{
+            grid-column: 1;
+            grid-row: 2;
+            padding: 1px;
+            margin: 5px;
+            .titulo-aside{
+                h3{
+                    font-size: 14px;
+                    margin-right: 50px;
+                }
+                p{
+                    font-size: 14px;
+                    margin-left: 50px;
+                }
+            }
+            .opciones-aside{
+                gap: 10px;
+                margin-bottom: 20px;
+                .envio , .retiro{
+                    display: grid;
+                    padding: 5px;
+                    font-size: 12px;
+                    img{
+                        width: 20px;
+                        margin-right: 10px;
+                    }
+                    div{
+                        justify-content: flex-end;
+                        input[type="checkbox"]{
+                            margin-left: 5px;
+
+                        }
+                        label[type="checkbox"]{
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+            .botones-aside{
+                form{
+                    input[type="text"]{
+                        padding: 5px;
+                        margin-bottom: 10px;
+                        font-size: 15px;
+                    }
+                    button{
+                        padding: 5px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .detalle-envio {
+            grid-row: 3;
+            margin: 10px;
+            .columna4, .columna5, .columna6 {
+                margin: 0 5px;
+                .envio-gratis, .local, .tarjeta {
+                    padding: 5px;
+                    img{
+                        width: 20px;
+                        margin-bottom: 5px;
+                    }
+                    h3{
+                        font-size: 14px;
+                    }
+                }
+                p{
+                    font-size: 11px;
+                    margin:5px;
+                }
+            }
+        } 
+    }   

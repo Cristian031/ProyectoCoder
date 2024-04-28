@@ -1,0 +1,158 @@
+.main-index{
+    .section-main-1 {
+        padding:60px;
+        div{
+            h2 {
+                font-size: 20px; 
+                margin: 10px 10px 0 0;      
+            }
+            h4{
+                font-size: 20px;
+            }
+            div{
+                img{
+                    width: 80px;
+                    border-radius: 50px;
+                    margin-right: 10px;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .section-consejos {
+        padding: 40px;
+        h3 {
+            font-size: 25px;
+        }
+        .consejo {         
+            h4 {
+                font-size: 25px;
+            }
+            p {
+                font-size: 15px; 
+            }
+            img {
+                max-width: 40%; 
+                height: auto; 
+            }            
+        }
+    }
+    .section-main-2{
+        padding: 10px;
+        h3{
+            @include h-text;
+        }
+        .card-container{
+            display: flex; // Alinea las tarjetas en línea
+            justify-content:space-between;
+            margin: 20px;
+            gap:20px;
+            .card{
+                padding: 20px;
+                height: auto;
+            }               
+        }  
+    }
+    .section-main-3 {
+        padding: 10px;
+        gap:25px;
+        h2{
+            @include h-text;
+            &::before,
+            &::after {
+                content: ''; // Especifica que estos elementos no tienen contenido visible
+                flex-grow: 1;
+                height: 3px;
+                background-color: #f1c40f;
+                position: absolute; // Cambia a posición absoluta para alinear correctamente los pseudo-elementos
+                top: 50%;
+                width: 25%; // Ancho ajustable según sea necesario
+            }
+        }
+        h5{
+            font-size: 28px;
+        }
+        p{
+            font-size: 16px;
+        }
+    } 
+    .section-main-4{
+        h4{
+            font-size: 15px;
+        }
+        button{
+            font-size: 15px;  
+        }
+    }
+}
+footer {
+    padding: 10px;
+    .footer-left {
+        max-width: 33%;
+        img {
+            width: 120px;
+            border-radius: 60%;
+            margin: 30px 0 0 10px;
+        }
+        div {
+            p {
+                font-size: 30px;
+                margin-left: 10px;
+                margin-top: 0;
+            }
+        }
+        p {
+            font-size: 12px;
+            margin-top: 60px;
+        }
+    }
+
+    .footer-center {
+        gap: 20px; /* Espacio entre las filas */
+        height: 100%; /* Asegura que ocupe toda la altura del footer */
+        margin:20px;
+        .ubicacion,
+        .contacto,
+        .correo {
+            height: auto;
+    
+            img {
+                width: 25px;
+                height: auto;
+                margin-right: 10px;
+            }
+    
+            .contacto-title , .contacto-details {
+                font-size: 12px;
+            }
+        }
+    }
+    .footer-right {
+        text-align: right;
+        max-width: 40%;
+        .footer-message {
+            padding: 20px;
+            font-size: 20px;
+            margin: 20px 0 20px 0;
+        }
+        .icons {
+            gap: 20px;
+            margin-top: 80px; /* Agregar margen superior */
+            a {
+                img {
+                    width: 30px;
+                    filter: grayscale(100%); /* Iconos en escala de grises por defecto */
+                    transition: filter 0.3s ease; /* Transición suave del filtro */
+                    &:hover{
+                        filter: grayscale(0%); /* Elimina la escala de grises al pasar el cursor sobre el icono */
+                    }
+                }
+            }
+        } 
+    }
+}
+
+
+

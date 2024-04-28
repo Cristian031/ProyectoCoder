@@ -1,0 +1,39 @@
+// Definición del mixin para los headers
+@mixin header-styling {
+    background-color: map-get($colores, colorPrincipal);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+@mixin h-text{
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: montserrat;
+            letter-spacing: 2px;
+            position: relative; 
+            text-align: center;
+            font-size: 28px;
+            text-shadow: 2px 2px 2px rgb(182, 182, 190);
+            &::before,
+            &::after {
+                content: ''; 
+                flex-grow: 1;
+                height: 3px;
+                background-color: #f1c40f;
+                position: absolute; 
+                top: 50%;
+                width: 35%; // Ancho ajustable según sea necesario
+            }
+            &::before {
+                left: 0; // Posición antes del texto
+                margin-left: 20px;
+            }
+            &::after {
+                right: 0; // Posición después del texto
+                margin-right: 20px;
+            }
+        }

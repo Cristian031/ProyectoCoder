@@ -1,0 +1,42 @@
+body{
+    background-color: map-get($colores, colorBasic);
+    .header-inicio{
+        @include header-styling;
+        div{
+            a{
+                img{
+                    height: 45px;
+                    width: auto;
+                    border-radius: 70%;
+                    margin: 0px;
+                }
+            }
+        }
+        form{
+            display: flex;
+            margin-top: 8px;
+            input[type="text"] {
+                padding: 7px;
+                width: 100px;
+                height: 15px; /* Ajusta la altura para que quepa la imagen */
+                font-size: 10px;
+                background-size: 12px;
+                background-position: 95% center; 
+            }  
+        } 
+    }
+}
+.nav-links {
+    margin-right: 5px;
+    list-style: none;
+    li {
+        display: flex;
+        margin-left: 20px;
+        a {
+            text-decoration: none;
+            font-size: 8px;
+            padding:3px 5px; /* Ajusta el padding según sea necesario */
+            align-items: center; /* Centra verticalmente el contenido */
+        }
+    }
+}

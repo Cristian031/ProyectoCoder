@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+}
+html {
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+

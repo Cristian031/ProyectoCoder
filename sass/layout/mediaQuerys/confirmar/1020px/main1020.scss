@@ -1,0 +1,117 @@
+.header-compra {
+    div {
+        a {
+            img {
+                height: auto;
+                width: 55px;
+                margin: 0px 0px 1px -50px;
+            }
+        }
+    }
+    form {
+        margin-top: 10px;
+        input[type="text"] {
+            padding: 4px 10px;
+            width: 250px;
+            font-size: 13px;
+            background-image: url("../../../assets/img/buscar.png");
+            background-size: 15px;
+            background-repeat: no-repeat;
+            background-position: 95% center;
+        }
+    }   
+    .nav-links {
+        li {
+            margin-right: 5px;
+            a{
+                font-size: 14px;
+                padding: 2px 8px;
+            }
+        }     
+    }  
+}
+.header-compra div {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    margin-top: 10px;
+    img {
+        width: 20px;
+        height: auto;
+        margin-right: 5px;
+    }
+    a {
+        text-decoration: none;
+        color: map-get($colores, colorBorder );
+        font-size: 15px;
+    }
+}
+
+.main-compra{
+    .contenedor-section{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 5px;
+        .metodos-pago{
+            width: 100%;
+            padding: 5px;
+            margin-top: 10px;
+            h2{
+                font-size: 20px;
+                margin: 5px 0 20px 0;
+            }
+            div{
+                .marco{
+                    margin-bottom: 10px;   
+                    padding: 10px;
+                    label{
+                        input[type="radio"]{
+                        margin-right: 5px; 
+                        }
+                        .contenido-marco{
+                            margin: 10px;
+                            img{
+                                width: 50px;
+                                margin-right: 5px; 
+                            }
+                            .descripcion{
+                                h3{
+                                    font-size: 19px; 
+                                }
+                                p{
+                                    font-size: 15px; 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .formulario{
+            width: 100%;
+            h2{
+                font-size: 20px;
+            }
+            form{
+                .input-group{
+                    margin-bottom: 20px;
+                    label{
+                        margin-bottom: 5px;
+                        font-size: 15px;
+                    }
+                    input, textarea{
+                        width: 100%;
+                        padding: 5px;
+                    }   
+                }
+                .contenedor-botones{
+                    button[type="submit"]{
+                        padding: 5px 30px; /* Ajusta el padding según sea necesario */
+                        font-size: 15px; /* Tamaño de fuente */
+                    }
+                }
+            }
+        }
+    }
+}

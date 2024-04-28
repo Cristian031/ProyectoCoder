@@ -1,0 +1,248 @@
+.main-index{
+    background-color:white; // Fondo blanco
+    gap:5px;
+    .section-main-1 {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        background-image: linear-gradient(to bottom, #9ec9e0, #aad2e3, #b8dbe6, #c6e3e9, #d5ebee, #dbeef1, #e1f1f4, #e7f4f7, #e6f2f8, #e5eff8, #e6edf7, #e7eaf6);
+        min-height: 40vh;
+        width: 100%;
+        padding:70px;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            -webkit-animation: kenburns-bottom 4s ease-out both;
+                    animation: kenburns-bottom 4s ease-out both;
+            h2 {
+                font-size: 50px;
+                color: white;
+                text-decoration: none;  
+                margin: 40px 20px 0 0; 
+                
+            }
+            h4{
+                font-size: 40px;
+                color: map-get($colores, colorPrincipal );
+            }
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 100px;
+                    border-radius: 50px;
+                    margin-right: 10px;
+                }
+                p{
+                    color: map-get($colores, colorPrincipal );
+                    font-size: 18px;
+                    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                }
+            }
+        }
+        div{
+            img {
+                width: 100%; /* Ancho relativo al contenedor */
+                height: 100%;    
+            }
+        }
+    }
+     @-webkit-keyframes kenburns-bottom {
+        0% {
+            -webkit-transform: scale(0.9) translateY(0);
+            transform: scale(0.9) translateY(0);
+            -webkit-transform-origin: 50% 84%;
+            transform-origin: 50% 84%;
+        }
+        100% {
+            -webkit-transform: scale(1.1) translateY(15px);
+            transform: scale(1.1) translateY(15px);
+            -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+        }
+    }
+    @keyframes kenburns-bottom {
+        0% {
+            -webkit-transform: scale(0.9) translateY(0);
+            transform: scale(0.9) translateY(0);
+            -webkit-transform-origin: 50% 84%;
+            transform-origin: 50% 84%;
+        }
+        100% {
+            -webkit-transform: scale(1.1) translateY(15px);
+            transform: scale(1.1) translateY(15px);
+            -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+        }
+    }
+    .section-consejos {
+        background-color: #ffffff; // Fondo blanco
+        padding: 50px; // Espacio alrededor del contenido
+        text-align: center; // Centra el contenido horizontalmente
+        h3 {
+            font-size: 36px; // Tamaño de la fuente del título
+            background-color: map-get($colores, colorBorder ); // Color del título
+            margin-bottom: 30px; // Espacio entre el título y los consejos
+            color:map-get($colores, colorBasic );
+            border-radius: 0 20px 0 20px;
+        }
+        .consejo {
+            margin-bottom: 30px; // Espacio entre cada consejo
+            
+            h4 {
+                color: #383838; // Color del título del consejo
+                font-size: 28px; // Tamaño de la fuente del título
+                margin: 20px 0 10px 0; // Espacio entre el título y el párrafo
+            }
+            
+            p {
+                color: #494949; 
+                font-size: 18px; 
+                line-height: 1.6; 
+                margin-bottom: 20px; 
+            }
+            img {
+                max-width: 30%; 
+                height: auto; 
+                margin-top: 20px; 
+                filter: drop-shadow(80%); // Aplica un efecto de sombra alrededor de la imagen
+                opacity: 0.5; // La imagen está opaca inicialmente
+            
+                &:hover {
+                    filter: drop-shadow(0%); // Elimina la sombra al pasar el mouse sobre la imagen
+                    opacity: 1; // Hace la imagen completamente visible al pasar el mouse sobre ella
+                    transition: opacity 0.5s ease; // Transición suave de la propiedad opacity durante 0.5 segundos
+                }
+            }            
+        }
+    }
+      
+    .section-main-2{
+        padding: 10px;
+        background-image: linear-gradient(to bottom, #eaf6f6, #daf4f4, #c9f1f1, #b7efef, #a4ecec, #a4ecec, #a4ecec, #a4ecec, #b7efef, #c9f1f1, #daf4f4, #eaf6f6);
+        h3{
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: montserrat;
+            letter-spacing: 2px;
+            position: relative; // Añade esto para que los elementos pseudo estén posicionados relativamente
+            text-align: center;
+            font-size: 28px;
+            text-shadow: 2px 2px 2px rgb(182, 182, 190);
+            margin: 40px;
+            &::before,
+            &::after {
+                content: ''; // Especifica que estos elementos no tienen contenido visible
+                flex-grow: 1;
+                height: 3px;
+                background-color: #f1c40f;
+                position: absolute; // Cambia a posición absoluta para alinear correctamente los pseudo-elementos
+                top: 50%;
+                width: 40%; 
+            }
+            &::before {
+                left: 0; // Posición antes del texto 
+            }
+            &::after {
+                right: 0; // Posición después del texto
+            }
+        }
+        .card-container{
+            display: flex; // Alinea las tarjetas en línea
+            justify-content:space-between;
+            margin: 50px;
+            gap:40px;
+            .card {
+                background-color: #f0f0f0;
+                padding: 20px;
+                border: 3px solid  map-get($colores, colorBorder);
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px; // Espacio entre las tarjetas
+                width: calc(33.333% - 10px); // Ajusta el ancho de las tarjetas para que haya 3 en una fila
+                margin-right: 20px; // Espacio entre las tarjetas
+                &:hover{
+                    transform: scale(1.2);
+                    transition: transform 400ms linear 100ms;
+                }
+                .rating {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+                .comment {
+                    font-size: 16px;
+                }
+            }               
+        }  
+    }
+    .section-main-3 {
+        padding: 10px;
+        h2 {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: montserrat;
+            letter-spacing: 2px;
+            position: relative; // Añade esto para que los elementos pseudo estén posicionados relativamente
+            text-align: center;
+            font-size: 28px;
+            text-shadow: 2px 2px 2px rgb(182, 182, 190);
+            &::before,
+            &::after {
+                content: ''; // Especifica que estos elementos no tienen contenido visible
+                flex-grow: 1;
+                height: 3px;
+                background-color: #f1c40f;
+                position: absolute; // Cambia a posición absoluta para alinear correctamente los pseudo-elementos
+                top: 50%;
+                width: 35%; // Ancho ajustable según sea necesario
+            }
+            &::before {
+                left: 0; // Posición antes del texto
+                margin-left: 20px;
+            }
+            &::after {
+                right: 0; // Posición después del texto
+                margin-right: 20px;
+            }
+        }
+        h5{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 50px;
+            color: #419197;
+        }
+        p{
+            text-align: center;
+            margin: 20px 0 40px 0;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 18px;
+            padding: 10px; // Añade espacio entre el borde y el texto
+            box-shadow: 10px 10px 10px rgb(207, 195, 208); // Agrega una sombra ligera
+        }
+    } 
+    .section-main-4{
+        background-color: map-get($colores, colorBorder);
+        padding: 10px;
+        display: flex;
+        gap:30px;
+        justify-content: center;
+        align-items: center;
+        h4{
+            font-size: 17px;
+            color: map-get($colores, colorBasic);
+        }
+        button{
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: map-get($colores, colorPrincipal);
+            cursor:pointer;
+            padding: 8px;
+        
+        }
+    }
+}
+

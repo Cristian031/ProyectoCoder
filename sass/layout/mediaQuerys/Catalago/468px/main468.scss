@@ -1,0 +1,191 @@
+body{
+    .header-catalogo{
+        @include header-styling;
+        div{
+            a{
+                img{
+                    height: auto;
+                    width: 60px;
+                    margin: 0px 30px 0 5px;
+                }
+            }
+        }
+        form{
+            display: flex;
+            margin-top: 5px;
+            input[type="text"] {
+                padding: 7px;
+                width: 140px;
+                height: 15px; 
+                font-size: 12px;
+                background-image: url("../../../assets/img/buscar.png");
+                background-size: 14px; 
+                background-repeat: no-repeat; 
+                background-position: 95% center; 
+            }  
+        } 
+        div{
+            display: flex;
+            justify-content: center; 
+            ul{
+                list-style-type: none; 
+                padding: 0;
+                margin-top: 40px; 
+                margin-left: -210px;
+                li{
+                    display: inline-block;
+                    margin-right: 0px; 
+                    a{
+                        font-size: 9px;
+                    }
+                }
+            }
+        }
+    }
+    .nav-links {
+        display: flex; 
+        gap: 1px;
+        list-style-type: none;
+        margin-right: 2px;
+        li {
+            justify-content: center;
+            margin-left: 2px;
+            a {
+                font-size: 10px;
+                padding: 2px 5px;
+                img {
+                    max-width: 14px; 
+                    height: auto; 
+                    margin-right: 0px;
+                }
+            }
+        }        
+    }
+}
+main{
+    .marcas-section{
+        margin:5px; 
+        div{
+            h2{
+                font-size: 15px;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            gap: 2px;
+            img{
+                width: 65px;
+                height: auto;
+                margin-bottom: 20px;
+                margin: 2px;
+                padding: 2px;
+            }
+        } 
+    }
+    .productos-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            gap:10px;
+            div{
+                width: 200px;
+                height:auto;
+                margin:5px;
+                img{
+                    width: 65px;
+                    height: auto;
+                    margin: 5px;
+                    padding: 5px; 
+                }
+                p{
+                    font-size: 14px;
+                    text-align: center;
+                    margin-top: 0;
+                    margin-bottom: 5px;
+
+                }
+                .agregar-carrito{
+                    padding: 5px 10px;
+                    font-size: 10px;
+                    margin-top: 5px;
+                    margin-bottom: 15px;
+                }                     
+            }
+        }
+    }
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px; 
+        a {
+            font-size: 12px;
+            padding: 1px 3px;
+            margin: 5px;
+            text-decoration: none;
+            transition: background-color 0.8s ease;
+        }
+    }
+    .ofertas {
+        h2 {    
+            font-size: 18px;
+            padding: 10px;
+            margin-bottom: 15px; // Añade un margen inferior para separar el h2 de las imágenes
+        }
+        .payment-info{
+            text-align: center;
+            font-size: 15px;
+            margin-top: 5px;
+        }
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap:20px;
+            div {
+                position: relative;
+                width: 300px;
+                margin: 20px;
+                img {
+                    width: 150px;
+                    height: auto;
+                    margin: 5px;
+                    padding: 25px;
+                    position: relative;
+                }
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    h6 {
+                        margin: 20px 0;
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 12px;
+                        width: 200px;
+                        margin-top: 0;
+                        margin-bottom: 10px;
+                    }
+                    .agregar-carrito{
+                        padding: 5px 10px;
+                        font-size: 10px;
+                        margin-top: 5px;
+                        margin-bottom: 15px;
+                    }
+                }
+                .discount-label {
+                    position: absolute;
+                    padding: 5px 10px;
+                    z-index: 1;
+                }
+            }                 
+        }
+    }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion" content="Realiza tus compras en línea y recíbelas en casa. Amplia selección de productos para tu mascota.">
+    <meta name="author" content="Cristian Magallanes">
+    <meta name="keywords" content="carrito de compras, selección de productos, añadir al carrito">
+    <meta name="copyright" content="© 2024 Huellitas Petshop">
+    <!--Opengraph-->
+    <meta property="og:title" content=Huellitas>
+    <meta property="og:site_name" content=huellitaspetshop.com>
+    <meta property="og:url" content=www.huellitas.com>
+    <meta property="og:description" content="Calidad, precios y atención personalizada.">
+    <meta property="og:type" content=website>
+    <meta property="og:image" content="https://elements-cover-images-0.imgix.net/0e947e72-2e49-4c64-80f4-29babf42f4a3?auto=compress%2Cformat&w=900&fit=max&s=2b9fe39f9e033e9ae76daf15c6388df5">
+    <title>Carrito | Huellitas</title>
+    <link href='https://fonts.googleapis.com/css?family=Life Savers' rel='stylesheet'>
+    <link   rel="stylesheet" href="../css/style.css"> 
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon-16x16.png">
+</head>
+<body>
+    <header class="header-carrito">
+        <div>
+            <a href="../index.html"><img src="../assets/img/logo.png" alt="logoPetShop"></a>
+        </div> 
+        <form action="#">
+            <input type="text" placeholder="Buscar...">
+        </form>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./catalogo.html">Regresar</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./iniciosesion.html">Iniciar Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-carrito">
+        <section class="detalle-producto">
+            <div class="columna1">
+                <h3>Producto</h3>
+                <div class="producto">
+                    <img src="../assets/img/catalogo/alimento1.png" alt="Imagen de Alimento-KenL-15kg">
+                    <p>Alimento Ken-L 15kg Premium Adulto.<br>$33.000</p>   
+                </div>
+            </div>
+            <div class="columna2">
+                <h3>Cantidad</h3>
+                <div class="cantidad">
+                    <div class="botones-cantidad">
+                        <button class="disminuir">-</button>
+                        <span> 4 </span>
+                        <button class="incrementar">+</button>
+                    </div>
+                    <p class="quitar">Quitar</p>
+                </div>
+            </div>
+            <div class="columna3">
+                <h3>Total</h3>
+                <p>$132.000</p>
+            </div>
+        </section>
+        <aside class="aside-total">
+            <div class="titulo-aside">
+                <h3>Total</h3>
+                <p>$132.000</p>
+            </div>
+            <div class="opciones-aside">
+                <div class="envio">
+                    <img src="../assets/img/delivery.png" alt="icon-delivery">
+                    <div>
+                        <input type="radio" id="envio-domicilio" name="opcion-envio">
+                        <label for="envio-domicilio">Envío a domicilio</label>
+                    </div>
+                </div>
+                <div class="retiro">
+                    <img src="../assets/img/store (1).png" alt="icon-store">
+                    <div>
+                        <input type="radio" id="retiro-tienda" name="opcion-envio">
+                        <label for="retiro-tienda">Retiro en tienda</label>
+                    </div>
+                </div>
+            </div>
+            <div class="botones-aside">
+                <form  action="./confirmar-compra.html" method="GET">
+                    <input type="text" id="codigo-postal"  placeholder="Ingrese código postal" pattern="[0-9]{4}" title="Ingrese un código postal válido de 4 dígitos" required>
+                    <button type="submit">Continuar</button>
+                </form>
+            </div>   
+        </aside>
+        <section class="detalle-envio">
+            <div class="columna4">
+                <div class="envio-gratis">
+                    <img src="../assets/img/delivery.png" alt="icono-envio">
+                    <h3>Envio gratis</h3>
+                </div>
+                <p>En compras superiores a $15.000</p>   
+            </div>
+            <div class="columna5">
+                <div class="local">
+                    <img src="../assets/img/store (1).png" alt="icono-local">
+                    <h3>Retiro en depósito</h3>
+                </div>
+                <p>Dorrego, Guaymallén Mendoza</p>
+            </div>
+            <div class="columna6">
+                <div class="tarjeta">
+                    <img src="../assets/img/tarjeta.png" alt="icono-tarjetacredito">
+                    <h3>Transferencia o Tarjeta</h3>
+                </div>       
+                <p>Débito o Crédito</p>
+            </div>
+        </section>
+    </main>  
+    <footer>
+        <div class="footer-left">
+            <img src="../assets/img/logo.png" alt="Logo-Huellitas">
+            <div>
+                <p>Huellitas</p>
+            </div>
+            <p>Información legal Política de privacidad<br>© 2024 All rights reserved.</p> 
+        </div>
+        <div class="footer-center">
+            <div class="ubicacion">
+                <img src="../assets/img/map-solid-24 - copia.png" alt="icon-ubic">
+                <p class="contacto-title"> Ubicación</p>
+                <p class="contacto-details">Ayacucho 173, Mendoza capital</p>
+            </div>
+            <div class="contacto">
+                <img src="../assets/img/contact-solid-24.png" alt="icon-contact">
+                <p class="contacto-title"> Contacto</p>
+                <p class="contacto-details">ARG +54 9 2613568826</p>
+            </div>
+            <div class="correo">
+                <img src="../assets/img/envelope-solid-24.png" alt="icon-email">
+                <p class="contacto-title"> Email</p>
+                <p class="contacto-details">huellitas@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="footer-message">
+                <p>¡Regístrate en Huellitas y recibe ofertas especiales!</p>
+                <a href="./iniciosesion.html">Haz clic aquí para registrarte</a>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com" target="_blank"><img src="../assets/img/facebook.png"alt="logo de facebook"></a>
+                <a href="https://api.whatsapp.com" target="_blank"><img src="../assets/img/whatsapp.png" alt="logo de whatsapp"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="../assets/img/instagram.png" alt="logo de instagram"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

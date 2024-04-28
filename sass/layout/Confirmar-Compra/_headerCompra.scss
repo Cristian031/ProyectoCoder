@@ -1,0 +1,68 @@
+body {
+    background-color: map-get($colores, colorBasic);
+}
+
+.header-compra {
+    @include header-styling;
+    div {
+        a {
+            img {
+                height: 60px;
+                width: auto;
+                border-radius: 70%;
+                margin: 5px 0px 5px 0px;
+            }
+        }
+    }
+    form {
+        display: flex;
+        margin-top: 10px;
+        input[type="text"] {
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid map-get($colores, colorSecundario);
+            width: 250px;
+            font-size: 15px;
+            background-image: url("../../../assets/img/buscar.png");
+            background-size: 18px;
+            background-repeat: no-repeat;
+            background-position: 95% center;
+        }
+    }
+    .nav-links {
+        margin-right: 20px;
+        li {
+            display: flex;
+            margin-left: 20px;
+            a{
+                color: white;
+                text-decoration: none;
+                font-size: 15px;            
+                &:hover{
+                    background-color:transparent;
+                    color: map-get($colores, colorBorder);
+                    border: 2px solid map-get($colores, colorBorder );
+                    border-radius: 30px;
+                    
+                }
+            }
+        }
+    } 
+}
+/* Estilos adicionales */
+.header-compra div {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    margin-top: 10px;
+    img {
+        width: 20px;
+        height: auto;
+        margin-right: 5px;
+    }
+    a {
+        text-decoration: none;
+        color: map-get($colores, colorBorder );
+        font-size: 15px;
+    }
+}

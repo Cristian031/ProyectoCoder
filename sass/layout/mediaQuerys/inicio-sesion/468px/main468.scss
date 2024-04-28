@@ -1,0 +1,77 @@
+body {
+    .header-inicio {
+        @include header-styling;
+        display: flex;
+        align-items: center;
+        div {
+            a {
+                img {
+                    height: 50px;
+                    width: auto;
+                    border-radius: 70%;
+                    margin: 0 5px;
+                }
+            }
+        }
+        form {
+            margin-top: 5px;
+            margin-left: 0px;
+            input[type="text"] {
+                padding: 10px;
+                width: 150px;
+                height: 15px;
+                font-size: 10px;
+                background-image: url("../../../assets/img/buscar.png");
+                background-size: 15px;
+                background-repeat: no-repeat;
+                background-position: 5px center;
+                padding-left: 25px;
+            }
+        }
+    }
+}
+.nav-links {
+    margin: 5px 0 0 5px;
+    li {
+        margin-left: 10px;
+        a {
+            font-size: 10px;
+            padding: 3px 7px; /* Ajusta el padding según sea necesario */
+        }
+    }
+}
+
+.main-inicio {
+    .login-container {
+        h2 {
+            font-size: 13px;
+        }
+        #loginForm {
+            div {
+                margin-bottom: 15px;
+                label {
+                    margin-bottom: 2px;
+                    font-size: 12px;
+                }
+                input {
+                    width: 100%;
+                    padding: 5px;
+                    font-size: 10px;
+                }
+            }
+        }
+        p {
+            font-size: 10px;
+        }
+        div {
+            h3 {
+                font-size: 14px;
+                margin: 4px;
+            }
+            h4 {
+                font-size: 12px;
+                margin-bottom: -20px;
+            }
+        }
+    }
+}

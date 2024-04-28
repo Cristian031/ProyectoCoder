@@ -1,0 +1,200 @@
+body{
+    .header-catalogo{
+        @include header-styling;
+        div{
+            a{
+                img{
+                    height: auto;
+                    width: 60px;
+                    margin: 0px 30px 0 5px;
+                }
+            }
+        }
+        form{
+            display: flex;
+            margin-top: 5px;
+            input[type="text"] {
+                padding: 7px;
+                width: 170px;
+                height: 15px; 
+                font-size: 12px;
+                background-image: url("../../../assets/img/buscar.png");
+                background-size: 14px; 
+                background-repeat: no-repeat; 
+                background-position: 95% center; 
+            }  
+        } 
+        div{
+            display: flex;
+            justify-content: center; 
+            align-items:center;
+            flex-direction: column;
+            ul{
+                list-style-type: none; 
+                padding: 0;
+                margin-top: 40px; 
+                margin-left: -250px;
+                li{
+                    display: inline-block;
+                    margin-right: 0px; 
+                    a{
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .nav-links {
+        display: flex; 
+        flex-direction: column;
+        gap: 0px;
+        list-style-type: none;
+        margin-right: 2px;
+        li {
+            justify-content: center;
+            margin-right: 5px;
+            margin-top: 5px;
+            a {
+                font-size: 12px;
+                padding: 3px 5px;
+                img {
+                    max-width: 17px; 
+                    height: auto; 
+                    margin-right: 5px;
+                }
+            }
+        }        
+    }
+}
+main{
+    .marcas-section{
+        margin:5px; 
+        div{
+            h2{
+                font-size: 18px;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            gap: 5px;
+            img{
+                width: 75px;
+                height: auto;
+                margin-bottom: 20px;
+                margin: 2px;
+                padding: 2px;
+            }
+        } 
+    }
+    .productos-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            margin-right: 10px; 
+            width: 30px;
+        }
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            gap:10px;
+            div{
+                width: 200px;
+                height:auto;
+                margin:5px;
+                img{
+                    width: 60px;
+                    height: auto;
+                    margin: 5px;
+                    padding: 5px; 
+                }
+                p{
+                    font-size: 14px;
+                    text-align: center;
+                    margin-top: 0;
+                    margin-bottom: 5px;
+
+                }
+                .agregar-carrito{
+                    padding: 5px 10px;
+                    font-size: 10px;
+                    margin-top: 5px;
+                    margin-bottom: 15px;
+                }
+                            
+            }
+        }
+    }
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px; 
+        a {
+            font-size: 14px;
+            padding: 1px 3px;
+            margin: 5px;
+            text-decoration: none;
+            transition: background-color 0.8s ease;
+        }
+    }
+    .ofertas {
+        h2 {    
+            font-size: 18px;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+        .payment-info{
+            text-align: center;
+            font-size: 15px;
+            margin-top: 5px;
+        }
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+            div {
+                position: relative;
+                width: 300px;
+                margin-top: 50px;
+                img {
+                    width: 180px;
+                    height: auto;
+                    margin: 5px;
+                    padding: 20px;
+                    position: relative;
+                }
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    h6 {
+                        margin: 20px 0;
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 15px;
+                        width: 200px;
+                        margin-top: 0;
+                        margin-bottom: 10px;
+                    }
+                    .agregar-carrito{
+                        padding: 5px 10px;
+                        font-size: 12px;
+                        margin-top: 5px;
+                        margin-bottom: 15px;
+                    }
+                }
+                .discount-label {
+                    position: absolute;
+                    padding: 5px 10px;
+                    z-index: 1;
+                }
+            }                 
+        }
+    }
+}

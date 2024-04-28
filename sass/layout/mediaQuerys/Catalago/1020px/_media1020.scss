@@ -1,0 +1,8 @@
+@media (max-width:1020px){
+    @import "./main1020.scss";
+    .productos-section div {
+        width: 100%; /* Cambia el ancho a 100% para ocupar todo el ancho disponible */
+        margin: 0 0 20px 0; /* Ajusta los márgenes */
+        text-align: center; /* Centra el contenido */
+    }
+}

@@ -1,0 +1,59 @@
+body{
+    background-color: map-get($colores, colorBasic);
+    .header-carrito{
+        @include header-styling;
+        div{
+            a{
+                img{
+                    height: 60px;
+                    width: auto;
+                    border-radius: 70%;
+                    margin: 0px 20px;
+                }
+            }
+        }
+        form{
+            display: flex;
+            margin-top: 10px;
+            input[type="text"] {
+                padding: 10px;
+                border-radius: 10px;
+                border: 1px solid map-get($colores, colorSecundario);
+                width: 200px;
+                height: 15px; /* Ajusta la altura para que quepa la imagen */
+                font-size: 15px;
+                background-image: url("../../../assets/img/buscar.png");
+                background-size: 20px; /* Ajusta el tamaño de la imagen */
+                background-repeat: no-repeat; /* Evita la repetición de la imagen */
+                background-position: 95% center; /* Posiciona la imagen a la derecha y centrada verticalmente */
+            }  
+        } 
+    }
+}
+.nav-links {
+    margin-right: 20px;
+    li {
+        display: flex;
+        margin-left: 20px;
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+            padding: 5px 10px; /* Ajusta el padding según sea necesario */
+            border-radius: 5px; /* Ajusta el radio del borde según sea necesario */
+            background-color: map-get($colores, colorBorder); /* Cambia el color de fondo según sea necesario */
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Añade una sombra al botón */
+            transition: box-shadow 0.3s; /* Agrega una transición suave */
+            display: flex; /* Asegura que el contenido sea flexible */
+            align-items: center; /* Centra verticalmente el contenido */
+            &:hover {
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Cambia la sombra al pasar el cursor */
+            }
+            img {
+                max-width: 20px; /* Establece un ancho máximo para la imagen */
+                height: auto; /* Ajusta la altura automáticamente */
+                margin-right: 5px; /* Ajusta el margen derecho según sea necesario */
+            }
+        }
+    }
+}

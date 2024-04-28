@@ -1,0 +1,55 @@
+
+body{
+    .header-inicio{
+        @include header-styling;  
+    }
+}
+.nav-links {
+    margin: 5px 0 0 5px;
+    li {
+        margin-left: 10px;
+        a {
+            font-size: 12px;
+            padding: 3px 7px; /* Ajusta el padding según sea necesario */
+        }
+    }
+}
+.main-inicio {
+    align-items: center; /* Centra verticalmente */
+    justify-content: flex-end; /* Centra horizontalmente */
+    .login-container {
+        h2 {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+        #loginForm {
+            div {
+                margin-bottom: 15px;
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                    font-size: 12px;
+                }
+                input {
+                    width: 100%;
+                    padding: 8px;
+                    font-size: 10px;
+                }
+            }
+        }
+        p {
+            font-size: 10px;
+        }
+
+        div {
+            h3 {
+                font-size: 14px;
+                margin: 4px;
+            }
+            h4 {
+                font-size: 12px;
+                margin-bottom: -20px;
+            }
+        }
+    }
+}

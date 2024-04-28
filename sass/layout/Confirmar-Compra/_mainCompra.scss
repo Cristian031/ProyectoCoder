@@ -1,0 +1,110 @@
+.main-compra{
+    background-color: map-get($colores, colorBasic );
+    .contenedor-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start; /* Alinea los section en la parte superior */
+        margin-top: 20px; /* Espacio entre las secciones y otros elementos */
+        border: 2px solid map-get($colores, colorBorder );
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        .metodos-pago{
+            flex-direction: column;
+            width: 50%;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 10px;
+            h2{
+                text-align: center;
+                margin: 20px 0;
+            }
+            div{
+                .marco{
+                    display: flex;
+                    align-items: center; /* Alinea verticalmente los elementos */
+                    margin-bottom: 20px;
+                    border: 2px solid map-get($colores, colorBorder);
+                    padding: 20px;
+                    border-radius: 10px;
+                    label{
+                        align-items: center; /* Alinea verticalmente los elementos */
+                        input[type="radio"]{
+                        margin-right: 10px; /* Espacio entre el checkbox y el contenido */
+                        cursor: pointer; /* Cambia el cursor al pasar el ratón */
+                        }
+                        .contenido-marco{
+                            display: flex;
+                            align-items: center; /* Alinea verticalmente los elementos */
+                            img{
+                                width: 60px;
+                                height: auto;
+                                margin-right: 10px; /* Espacio entre la imagen y el texto */
+                            }
+                            .descripcion{
+                                h3{
+                                    font-size: 25px; /* Tamaño de fuente deseado */
+                                }
+                                p{
+                                    font-size: 18px; /* Tamaño de fuente deseado */
+                                    color: map-get($colores, colorBorder);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .formulario{
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            h2{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            form{
+                .input-group{
+                    margin-bottom: 20px;
+                    label{
+                        display: block;
+                        margin-bottom: 5px;
+                    }
+                    input, textarea{
+                        width: 100%;
+                        padding: 10px;
+                        border-radius: 5px;
+                        border: 1px solid map-get($colores, colorBasic );
+                    }   
+                }
+                .contenedor-botones{
+                    display: flex;
+                    justify-content: center; /* Centra horizontalmente el botón */
+                    margin-top: 20px; /* Espacio entre los section y el botón */
+                    button[type="submit"]{
+                        padding: 10px 20px; /* Ajusta el padding según sea necesario */
+                        background-color: map-get($colores, colorBorder);; /* Color de fondo */
+                        border: none; /* Sin borde */
+                        border-radius: 5px; /* Borde redondeado */
+                        cursor: pointer; /* Cursor al pasar sobre el botón */
+                        color: white; /* Color del texto */
+                        font-size: 16px; /* Tamaño de fuente */
+                        &:hover{
+                            background-color: transparent;
+                            border: 2px solid map-get($colores, colorBorder); /* Color de fondo cuando se pasa el cursor sobre el botón */
+                            border-radius: 40px;
+                            color: black;
+                            
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+}
