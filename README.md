@@ -3,16 +3,15 @@
 
 ## Huellitas PetShop
 
-##### Se utilizaron las siguientes herramientas:
-- Figma para el diseño de la página Web.
-- HTML.
-- CSS.
-- SASS.
-- SEO.
-- Los HTML que estan full responsive son: Index - Inicio Sesion - Catalogo.
-- Este trabajo cumple con todos los requisitos solicitados para dicha entrega. 
+##### Herramientas Utilizadas:
+- Diseño: Figma
+- Mockup en Figma: https://www.figma.com/file/F9izpT2hfum2W0JfeOQA0o/Proyecto-DesarrolloWeb?type=design&node-id=0%3A1&mode=design&t=l7A8mdmLhZRPSqLw-1
+- Lenguajes: HTML, CSS.
+- Preprocesador: SASS.
+- Optimización: SEO.
+- Responsive: Página 100% Responsive.
+- Prácticas: Desarrollada siguiendo buenas prácticas
+- Este proyecto cumple con todos los requisitos solicitados y está diseñado y desarrollado con el objetivo de brindar una experiencia óptima para los usuarios en diferentes dispositivos y tamaños de pantalla.
 
-[![](https://images.unsplash.com/photo-1590850401689-aa09ffe9b47b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)](http://https://images.unsplash.com/photo-1590850401689-aa09ffe9b47b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+[![](https://elements-cover-images-0.imgix.net/0e947e72-2e49-4c64-80f4-29babf42f4a3?auto=compress%2Cformat&w=900&fit=max&s=2b9fe39f9e033e9ae76daf15c6388df5)]
 
-
-Mockup: Link de figma   
